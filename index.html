@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+</head>
+
+<body>
+  <!-- PATTERN -->
+  <div class="pattern"></div>
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- -------------- HEADER -------------- -->
+    <header class="header">
+      <div class="header-texts">
+        <h1 class="title">Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="dark-mode" id="dark-mode">
+        <p> Dark Mode</p>
+        <div class="toggle">
+          <i class="indicator"></i>
+        </div>
+      </div>
+    </header>
+    <!-- -------------- FOLLOWERS -------------- -->
+    <section class="followers">
+      <!-- card followers 1 -->
+      <div class="card">
+        <div class="icon-social">
+          <img src="./images/icon-facebook.svg" alt="icon-facebook">
+          <p>@nathanf</p>
+        </div>
+        <div class="followers-texts">
+          <h2 class="title">1987</h2>
+          <p>Followers</p>
+        </div>
+        <div class="today">
+          <img src="./images/icon-up.svg" alt="icon-up">
+          <p class="color-up">12 Today</p>
+        </div>
+      </div>
+      <!-- card followers 2 -->
+      <div class="card">
+        <div class="icon-social">
+          <img src="./images/icon-twitter.svg" alt="icon-twitter">
+          <p>@nathanf</p>
+        </div>
+        <div class="followers-texts">
+          <h2 class="title">1044</h2>
+          <p>Followers</p>
+        </div>
+        <div class="today">
+          <img src="./images/icon-up.svg" alt="icon-up">
+          <p class="color-up">99 Today</p>
+        </div>
+      </div>
+      <!-- card followers 3 -->
+      <div class="card">
+        <div class="bar"></div>
+        <div class="icon-social icon-social-instagram">
+          <img src="./images/icon-instagram.svg" alt="icon-instagram">
+          <p>@realnathanf</p>
+        </div>
+        <div class="followers-texts">
+          <h2 class="title">11k</h2>
+          <p>Followers</p>
+        </div>
+        <div class="today">
+          <img src="./images/icon-up.svg" alt="icon-up">
+          <p class="color-up">1099 Today</p>
+        </div>
+      </div>
+      <!-- card followers 4 -->
+      <div class="card">
+        <div class="icon-social">
+          <img src="./images/icon-youtube.svg" alt="icon-youtube">
+          <p>Nathan F.</p>
+        </div>
+        <div class="followers-texts">
+          <h2 class="title">8239</h2>
+          <p>Subscribers</p>
+        </div>
+        <div class="today">
+          <img src="./images/icon-down.svg" alt="icon-down">
+          <p class="color-down">144 Today</p>
+        </div>
+      </div>
+    </section>
+    <!-- -------------- MAIN -------------- -->
+    <main class="main">
+      <h2 class="title title-overview">Overview - Today</h2>
+      <!-- -------------- OVERVIEW -------------- -->
+      <section class="overview">
+        <!-- card 1 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">87</h2>
+            <p>Page Views</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-facebook.svg" alt="icon-facebook">
+            <div class="percentage">
+              <img src="./images/icon-up.svg" alt="icon-up">
+              <p class="color-up">3%</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">52</h2>
+            <p>Likes</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-facebook.svg" alt="icon-facebook">
+            <div class="percentage">
+              <img src="./images/icon-down.svg" alt="icon-down">
+              <p class="color-down">2%</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">5462</h2>
+            <p>Likes</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-instagram.svg" alt="icon-instagram">
+            <div class="percentage">
+              <img src="./images/icon-up.svg" alt="icon-up">
+              <p class="color-up">2257%</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">52k</h2>
+            <p>Profile Views</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-instagram.svg" alt="icon-instagram">
+            <div class="percentage">
+              <img src="./images/icon-up.svg" alt="icon-up">
+              <p class="color-up">1375%</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">117</h2>
+            <p>Retweets</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            <div class="percentage">
+              <img src="./images/icon-up.svg" alt="icon-up">
+              <p class="color-up">303%</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">507</h2>
+            <p>Likes</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            <div class="percentage">
+              <img src="./images/icon-up.svg" alt="icon-up">
+              <p class="color-up">553%</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">107</h2>
+            <p>Likes</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-youtube.svg" alt="icon-youtube">
+            <div class="percentage">
+              <img src="./images/icon-down.svg" alt="icon-down">
+              <p class="color-down">19%</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card">
+          <div class="overview-texts">
+            <h2 class="title">1407</h2>
+            <p>Total Views</p>
+          </div>
+          <div class="overview-today">
+            <img src="./images/icon-youtube.svg" alt="icon-youtube">
+            <div class="percentage">
+              <img src="./images/icon-down.svg" alt="icon-down">
+              <p class="color-down">12%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- JS -->
+  <script src="./js/script.js"></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emanuel Bonardo</a>.
+  </div> -->
+</body>
+
+</html>

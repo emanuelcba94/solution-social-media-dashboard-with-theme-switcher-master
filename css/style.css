@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* ------------- ROOT VARIABLES ------------- */
+:root {
+    /* Primary */
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+    /* Social Media */
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --YouTube: hsl(348, 97%, 39%);
+    /* Toggle Indicator */
+    --Toggle: hsl(230, 22%, 74%);
+    /* Light Theme */
+    --White: hsl(0, 0%, 100%);
+    /* BG */
+    --Very-Pale-Blue: hsl(225, 100%, 98%);
+    /* Top BG Pattern */
+    --Light-Grayish-Blue: hsl(227, 47%, 96%);
+    /* Card BG */
+    --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+    /* Card BG Hover */
+    --Dark-Grayish-Blue-h: hsla(229, 35%, 90%);
+    /* Text Paragraph*/
+    --Very-Dark-Blue: hsl(230, 17%, 14%);
+    /* Text Titles*/
+    /* Typography */
+    --font-inter: 'Inter', sans-serif;
+    --font-w-400: 400;
+    --font-w-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------- DARK THEME VARIABLES ------------- */
+.dark-theme {
+    --Toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --White: hsl(230, 17%, 14%);
+    /* BG */
+    --Very-Pale-Blue: hsl(232, 19%, 17%);
+    /* Top BG Pattern */
+    --Light-Grayish-Blue: hsl(228, 28%, 20%);
+    /* Card BG */
+    --Dark-Grayish-Blue: hsl(228, 34%, 66%);
+    /* Card BG Hover */
+    --Dark-Grayish-Blue-h: hsla(228, 34%, 66%, 0.5);
+    /* Text Paragraph*/
+    --Very-Dark-Blue: hsl(0, 0%, 100%);
+    /* Text Titles*/
+}
+
+.title {
+    color: var(--Very-Dark-Blue);
+}
+
+.title-overview.active {
+    color: var(--Very-Dark-Blue);
+}
+
+.numbers {
+    color: var(--Very-Dark-Blue);
+}
+
+p {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.card {
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 0.4rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: var(--Dark-Grayish-Blue-h);
+}
+
+.color-up {
+    color: var(--Lime-Green);
+    font-weight: 700;
+}
+
+.color-up.active {
+    color: var(--Very-Dark-Blue);
+}
+
+.color-down {
+    color: var(--Bright-Red);
+    font-weight: 700;
+}
+
+body {
+    background: var(--White);
+    font-family: var(--font-inter);
+    font-size: 14px;
+    position: relative;
+}
+
+.pattern {
+    background-color: var(--Very-Pale-Blue);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 230px;
+    z-index: -1;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.container {
+    display: grid;
+    padding: 2rem 1.5rem;
+}
+
+/* ------------- HEADER ------------- */
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.header>div>p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.header-texts {
+    border-bottom: 1px solid var(--Very-Dark-Blue);
+    padding-bottom: 1rem;
+}
+
+.header-texts>h1 {
+    font-size: 1.5rem;
+}
+
+.header-texts>p {
+    padding-top: 0.1rem;
+}
+
+.dark-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle {
+    width: 2.8rem;
+    height: 1.4rem;
+    background: var(--Toggle);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: var(--White);
+    transform: scale(0.8);
+    color: var(--White);
+}
+
+.indicator.active {
+    /* right: 21px; */
+    left: 1px;
+    color: var(--White);
+}
+
+/* ------------- FOLLLOWERS ------------- */
+.followers {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.followers>.card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.icon-social {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-social>p {
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.icon-social-instagram {
+    padding-top: 0.3rem;
+}
+
+.followers-texts>h2 {
+    font-size: 3.5rem;
+}
+
+.followers-texts>p {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.today {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.today img {
+    padding-right: 0.5rem;
+}
+
+.bar {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--Instagram);
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+.followers .card:nth-of-type(1) {
+    border-top: 6px solid var(--Facebook);
+}
+
+.followers .card:nth-of-type(2) {
+    border-top: 6px solid var(--Twitter);
+}
+
+.followers .card:nth-of-type(4) {
+    border-top: 6px solid var(--YouTube);
+}
+
+/* ------------- MAIN ------------- */
+.main {
+    margin-top: 3rem;
+}
+
+.main>h2 {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------- OVERVIEW ------------- */
+.overview {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.overview>.card {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-texts {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.overview-texts>h2 {
+    font-size: 2rem;
+}
+
+.overview-texts>p {
+    font-weight: 700;
+}
+
+.overview-today {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+}
+
+.overview-today>img {
+    width: 20px;
+}
+
+.overview-today>.percentage {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+/* 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+/* ------------- MEDIA QUERIES ------------- */
+@media screen and (min-width: 600px) {
+    .color-up.active {
+        color: var(--Lime-Green);
+    }
+
+    .container {
+        max-width: 1210px;
+        margin: 0 auto;
+        padding: 3rem;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-texts {
+        border-bottom: none;
+        padding-bottom: 0rem;
+    }
+
+    .header-texts>h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header-texts>p {
+        padding-top: 0.1rem;
+    }
+
+    .dark-mode {
+        gap: 1rem;
+    }
+
+    .followers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .color-up.active {
+        color: var(--Lime-Green);
+    }
+
+    .pattern {
+        height: 245px;
+    }
+
+    .header-texts>h1 {
+        font-size: 1.7rem;
+    }
+    
+    .header-texts>p {
+        padding-top: 0.1rem;
+    }
+
+    .followers {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .overview {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
